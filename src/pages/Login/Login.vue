@@ -1,10 +1,10 @@
 <template>
     <div class="LoginView">
-
+        this is login page
     </div>
 </template>
 
-<script type="es6">
+<script>
 	export default {
 		name: 'Login',
 		data () {
@@ -12,6 +12,7 @@
 	}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang='scss' scoped>
+    #app {
+    }
 </style>
