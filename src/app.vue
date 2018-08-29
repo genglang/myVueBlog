@@ -1,8 +1,8 @@
 <template>
-    <div id="app">
-       {{name}}
-        <Login></Login>
-    </div>
+  <div id="app">
+    {{name}}
+    <Login></Login>
+  </div>
 </template>
 
 <script>
@@ -10,9 +10,9 @@
 
 	export default {
 		name: 'App',
-        components:{
+		components: {
 			Login
-        },
+		},
 		data () {
 			return {
 				name: 'app'
@@ -23,6 +23,6 @@
 
 
 <style lang='scss' scoped>
-    #app {
-    }
+  #app {
+  }
 </style>

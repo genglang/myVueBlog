@@ -1,7 +1,7 @@
 <template>
-    <div class="LoginView">
-        <FormInput/>
-    </div>
+	<div class="LoginView">
+		<FormInput default-text='' placeholderText='请输入账号' @onInput="onInputChange"/>
+	</div>
 </template>
 
 <script>
@@ -14,11 +14,18 @@
 		},
 		data () {
 			return {}
+		},
+		methods: {
+			onInputChange (value) {
+				console.log('===========')
+				console.log(value)
+			}
 		}
 	}
 </script>
 
 <style lang='scss' scoped>
-    LoginView {
-    }
+	.LoginView {
+		margin: 1rem;
+	}
 </style>
