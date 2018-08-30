@@ -1,11 +1,21 @@
 <template>
-	<input class='formInput' type="text" :value="defaultText" @input="onInputTextChange" :placeholder="placeholderText">
+	<input class='formInput' :type="inputType" :value="defaultText" @input="onInputTextChange" :placeholder="placeholderText">
 </template>
 
 <script>
 	export default {
 		name: 'FormInput',
-		props: ['defaultText','placeholderText'],
+		props: {
+			inputType:{
+				default: 'text'
+			},
+			defaultText:{
+
+			},
+			placeholderText:{
+
+			}
+		},
 		methods: {
 			onInputTextChange (value) {
 				console.log(value)

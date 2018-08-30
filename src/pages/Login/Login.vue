@@ -1,6 +1,7 @@
 <template>
 	<div class="LoginView">
 		<FormInput default-text='' placeholderText='请输入账号' @onInput="onInputChange"/>
+		<FormInput input-type='password' default-text='' placeholderText='请输入账号' @onInput="onInputChange"/>
 	</div>
 </template>
 
