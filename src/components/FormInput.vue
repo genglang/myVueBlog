@@ -1,27 +1,20 @@
 <template>
-	<input class='formInput' :type="inputType" :value="defaultText" @input="onInputTextChange" :placeholder="placeholderText">
+	<input class='formInput'
+	       :type="type"
+	       :placeholder="placeholder"
+	       @input="$emit('input', $event.target.value)"
+	/>
 </template>
 
 <script>
 	export default {
 		name: 'FormInput',
 		props: {
-			inputType:{
+			type: {
 				default: 'text'
 			},
-			defaultText:{
-
-			},
-			placeholderText:{
-
-			}
+			placeholder: {}
 		},
-		methods: {
-			onInputTextChange (value) {
-				console.log(value)
-				this.$emit('onInput',value)
-			}
-		}
 	}
 </script>
 
