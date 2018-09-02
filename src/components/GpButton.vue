@@ -1,6 +1,6 @@
 <template>
 	<button :class="[buttonDefaultStyle,buttonType]">
-		{{text}}
+		<slot></slot>
 	</button>
 </template>
 
@@ -11,13 +11,9 @@
 			size: {
 				default: 'medium',
 			},
-			type: {},
 			round: false,
 			disabled: false,
 			icon: '',
-			text: {
-				default: '按钮'
-			},
 			type: {
 				default: 'button'
 			},

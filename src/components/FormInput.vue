@@ -8,7 +8,7 @@
 
 <script>
 	export default {
-		name: 'FormInput',
+		name: 'form-input',
 		props: {
 			type: {
 				default: 'text'
