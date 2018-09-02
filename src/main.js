@@ -4,7 +4,6 @@ import App from './app.vue'
 import FormInput from './components/FormInput'
 import GpButton from './components/GpButton'
 
-console.log(FormInput)
 Vue.component('form-input',FormInput)
 Vue.component('gp-button',GpButton)
 

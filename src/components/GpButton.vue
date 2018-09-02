@@ -1,6 +1,6 @@
 <template>
-	<button :class="[buttonDefaultStyle,buttonType]">
-		<slot></slot>
+	<button :class="[buttonDefaultStyle,buttonSize,buttonType]">
+		<slot>按钮</slot>
 	</button>
 </template>
 
@@ -8,17 +8,23 @@
 	export default {
 		name: 'GpButton',
 		props: {
-			size: {
-				default: 'medium',
-			},
 			round: false,
 			disabled: false,
 			icon: '',
 			type: {
 				default: 'button'
 			},
-			buttonType: {
-				default: 'primary'
+			buttonSize: { // small medium large
+				default: 'medium',
+				validator:function (value) {
+					return ['small', 'medium', 'large'].indexOf(value) !== -1
+				}
+			},
+			buttonType: {  // primary warning error
+				default: 'primary',
+				validator:function (value) {
+					return ['primary', 'warning', 'error'].indexOf(value) !== -1
+				}
 			}
 		},
 		data () {

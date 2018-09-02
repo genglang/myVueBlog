@@ -8,7 +8,7 @@
 			<label for="password">密码</label>
 			<form-input id="password" type='password' placeholder='请输入账号' v-model="userPwd"/>
 		</div>
-		<gp-button buttonType="default">登录</gp-button>
+		<gp-button buttonType="default" buttonSize="large">登录</gp-button>
 	</form>
 </template>
 
