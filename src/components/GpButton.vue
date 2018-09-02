@@ -1,5 +1,5 @@
 <template>
-	<button :class="[gl-button,buttonType]">
+	<button :class="[buttonDefaultStyle,buttonType]">
 		{{text}}
 	</button>
 </template>
@@ -21,26 +21,35 @@
 			type: {
 				default: 'button'
 			},
-			buttonType:{
+			buttonType: {
 				default: 'primary'
+			}
+		},
+		data () {
+			return {
+				buttonDefaultStyle: 'gl-button'
 			}
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
-	.gl-button{
-		border: 1px solid #ddd;
+	.gl-button {
+		padding: .5rem 1rem;
+		border: 1px solid #DDDDDD;
+		border-radius: .5rem;
+		outline: none;
 	}
-	.primary{
+
+	.primary {
 		background-color: green;
 	}
 
-	.warning{
+	.warning {
 		background-color: yellow;
 	}
 
-	.error{
+	.error {
 		background-color: red;
 	}
 </style>

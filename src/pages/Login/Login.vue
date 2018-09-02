@@ -9,7 +9,7 @@
 			<FormInput id="password" type='password' placeholder='请输入账号' v-model="userPwd"/>
 		</div>
 		<button type="submit">登录</button>
-		<GpButton></GpButton>
+		<GpButton buttonType="default"></GpButton>
 	</form>
 </template>
 
