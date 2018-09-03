@@ -1,15 +1,19 @@
 <template>
-	<input :class="['formInput',size]"
+	<input :class="['formInput',inputSize]"
 	       :type="type"
 	       :placeholder="placeholder"
+	       :maxlength="maxlength"
+	       :minlength="minlength"
+	       :disabled="disabled"
+	       :readonly="readonly"
+	       :autofocus="autofocus"
+	       :max="max"
+	       :min="min"
 	       @input="$emit('input', $event.target.value)"
-	       maxlength="maxlength"
-	       minlength="minlength"
-	       disabled="disabled"
-	       readonly="readonly"
-	       autofocus="autofocus"
-	       max="max"
-	       min="min"
+	       @change="$emit('change', $event.target.value)"
+	       @blur="$emit('blur', $event.target.value)"
+	       @focus="$emit('focus', $event.target.value)"
+	       @clear="$emit('clear', $event.target.value)"
 	/>
 </template>
 
@@ -20,20 +24,20 @@
 			type: {
 				default: 'text'
 			},
-			size:{
-				default: 'medium',
-				validator:function (value) {
-					return ['medium ', 'small ', 'mini'].indexOf(value) !== -1
+			inputSize: {
+				default: 'small',
+				validator: function (value) {
+					return ['small', 'medium ', 'large'].indexOf(value) !== -1
 				}
 			},
-			maxlength:Number,
-			minlength:Number,
+			maxlength: Number,
+			minlength: Number,
 			placeholder: {},
 			disabled: Boolean,
-			readonly:Boolean,
+			readonly: Boolean,
 			autofocus: Boolean,
-			max:Number,
-			min:Number,
+			max: Number,
+			min: Number,
 		},
 	}
 </script>
@@ -49,7 +53,19 @@
 			border-radius: .5rem;
 		}
 	}
-	.small{
 
+	.small {
+		width: 200px;
+	}
+
+	.medium {
+		width: 350px;
+	}
+
+	.large {
+		width: calc(100% - 1rem);
+	}
+	.flex {
+		flex: 1
 	}
 </style>
