@@ -16,14 +16,14 @@
 			},
 			buttonSize: { // small medium large
 				default: 'medium',
-				validator:function (value) {
+				validator: function (value) {
 					return ['small', 'medium', 'large'].indexOf(value) !== -1
 				}
 			},
 			buttonType: {  // primary warning error
 				default: 'primary',
-				validator:function (value) {
-					return ['primary', 'warning', 'error'].indexOf(value) !== -1
+				validator: function (value) {
+					return ['primary', 'success', 'warning', 'error', 'info'].indexOf(value) !== -1
 				}
 			}
 		},
@@ -43,15 +43,35 @@
 		outline: none;
 	}
 
+	.small {
+		min-width: 50px;
+	}
+
+	.medium {
+		min-width: 200px;
+	}
+
+	.large {
+		width: 100%;
+	}
+
 	.primary {
-		background-color: green;
+		background-color: #409EFF;
+	}
+
+	.success {
+		background-color: #67C23A;
 	}
 
 	.warning {
-		background-color: yellow;
+		background-color: #E6A23C;
 	}
 
 	.error {
-		background-color: red;
+		background-color: #F56C6C;
+	}
+
+	.info {
+		background-color: #909399;
 	}
 </style>

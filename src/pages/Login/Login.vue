@@ -1,14 +1,16 @@
 <template>
-	<form @submit.prevent="onLoginSubmit" class="LoginView">
-		<div>
+	<form @submit.prevent="onLoginSubmit" class="Login-view">
+		<div class="form-group">
 			<label for="userName">账号</label>
 			<form-input id="userName" placeholder='请输入账号' v-model="userName"/>
 		</div>
-		<div>
+		<div class="form-group">
 			<label for="password">密码</label>
 			<form-input id="password" type='password' placeholder='请输入账号' v-model="userPwd"/>
 		</div>
-		<gp-button buttonType="default" buttonSize="large">登录</gp-button>
+		<div class="form-group">
+			<gp-button buttonType="primary" buttonSize="large">登录</gp-button>
+		</div>
 	</form>
 </template>
 
@@ -36,7 +38,10 @@
 </script>
 
 <style lang='scss' scoped>
-	.LoginView {
+	.Login-view {
 		margin: 1rem;
+	}
+	.form-group{
+		margin-top: .5rem;
 	}
 </style>

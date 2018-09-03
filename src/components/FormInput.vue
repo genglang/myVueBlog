@@ -1,8 +1,15 @@
 <template>
-	<input class='formInput'
+	<input :class="['formInput',size]"
 	       :type="type"
 	       :placeholder="placeholder"
 	       @input="$emit('input', $event.target.value)"
+	       maxlength="maxlength"
+	       minlength="minlength"
+	       disabled="disabled"
+	       readonly="readonly"
+	       autofocus="autofocus"
+	       max="max"
+	       min="min"
 	/>
 </template>
 
@@ -13,7 +20,20 @@
 			type: {
 				default: 'text'
 			},
-			placeholder: {}
+			size:{
+				default: 'medium',
+				validator:function (value) {
+					return ['medium ', 'small ', 'mini'].indexOf(value) !== -1
+				}
+			},
+			maxlength:Number,
+			minlength:Number,
+			placeholder: {},
+			disabled: Boolean,
+			readonly:Boolean,
+			autofocus: Boolean,
+			max:Number,
+			min:Number,
 		},
 	}
 </script>
@@ -28,5 +48,8 @@
 			border: 1px solid #6495ED;
 			border-radius: .5rem;
 		}
+	}
+	.small{
+
 	}
 </style>
