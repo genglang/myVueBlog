@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    {{name}}
     <Login></Login>
   </div>
 </template>
@@ -15,7 +14,6 @@
 		},
 		data () {
 			return {
-				name: 'app'
 			}
 		}
 	}

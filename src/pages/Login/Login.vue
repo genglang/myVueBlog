@@ -1,5 +1,8 @@
 <template>
-	<form @submit.prevent="onLoginSubmit" class="Login-view">
+	<form @submit.prevent="onLoginSubmit" class="login-view">
+		<div>
+			<img src="../../images/header.jpg" alt="页头">
+		</div>
 		<div class="form-group">
 			<label class="form-text" for="userName">账号</label>
 			<form-input id="userName" placeholder='请输入账号' v-model="userName" input-size="flex"/>
@@ -38,15 +41,19 @@
 </script>
 
 <style lang='scss' scoped>
-	.Login-view {
+	.login-view {
 		margin: 1rem;
+		border: 1px solid #DDDDDD;
+		padding: 2rem;
 	}
-	.form-group{
+
+	.form-group {
 		margin-top: .5rem;
 		width: 100%;
 		display: flex;
 	}
-	.form-text{
+
+	.form-text {
 		margin: .5rem;
 	}
 </style>
