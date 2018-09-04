@@ -1,18 +1,20 @@
 <template>
-	<form @submit.prevent="onLoginSubmit" class="login-view">
+	<div class="login-container">
 		<div class="header-background"/>
-		<div class="form-group">
-			<label class="form-text" for="userName">账号</label>
-			<form-input id="userName" placeholder='请输入账号' v-model="userName" input-size="flex"/>
-		</div>
-		<div class="form-group">
-			<label class="form-text" for="password">密码</label>
-			<form-input id="password" type='password' placeholder='请输入账号' v-model="userPwd" input-size="flex"/>
-		</div>
-		<div class="form-group">
-			<gp-button buttonType="primary" buttonSize="large">登录</gp-button>
-		</div>
-	</form>
+		<form @submit.prevent="onLoginSubmit" class="login-view">
+			<div class="form-group">
+				<label class="form-text" for="userName">账号</label>
+				<form-input id="userName" placeholder='请输入账号' v-model="userName" input-size="flex"/>
+			</div>
+			<div class="form-group">
+				<label class="form-text" for="password">密码</label>
+				<form-input id="password" type='password' placeholder='请输入账号' v-model="userPwd" input-size="flex"/>
+			</div>
+			<div class="form-group">
+				<gp-button buttonType="primary" buttonSize="large">登录</gp-button>
+			</div>
+		</form>
+	</div>
 </template>
 
 <script>
@@ -39,13 +41,19 @@
 </script>
 
 <style lang='scss' scoped>
+	.login-container {
+		border: 1px solid #DDDDDD;
+		padding: 1rem;
+		.header-background {
+			width: 100px;
+			height: 100px;
+			background: url("/images/header.png") center center;
+		}
+	}
+
 	.login-view {
 		margin: 1rem;
-		border: 1px solid #DDDDDD;
-		padding: 2rem;
-		.header-background{
-			background: url("../../images/header.png");
-		}
+		padding: 1rem;
 	}
 
 	.form-group {
