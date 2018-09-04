@@ -1,8 +1,6 @@
 <template>
 	<form @submit.prevent="onLoginSubmit" class="login-view">
-		<div>
-			<img src="../../images/header.jpg" alt="页头">
-		</div>
+		<div class="header-background"/>
 		<div class="form-group">
 			<label class="form-text" for="userName">账号</label>
 			<form-input id="userName" placeholder='请输入账号' v-model="userName" input-size="flex"/>
@@ -45,6 +43,9 @@
 		margin: 1rem;
 		border: 1px solid #DDDDDD;
 		padding: 2rem;
+		.header-background{
+			background: url("../../images/header.png");
+		}
 	}
 
 	.form-group {

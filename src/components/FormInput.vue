@@ -27,7 +27,7 @@
 			inputSize: {
 				default: 'small',
 				validator: function (value) {
-					return ['small', 'medium ', 'large'].indexOf(value) !== -1
+					return ['small', 'medium ', 'large', 'flex'].indexOf(value) !== -1
 				}
 			},
 			maxlength: Number,
@@ -65,6 +65,7 @@
 	.large {
 		width: calc(100% - 1rem);
 	}
+
 	.flex {
 		flex: 1
 	}
