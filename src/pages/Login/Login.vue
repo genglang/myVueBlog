@@ -47,7 +47,7 @@
 		.header-background {
 			width: 100px;
 			height: 100px;
-			background: url("/images/header.png") center center;
+			background: url("/../../images/header.png") center center;
 		}
 	}
 
