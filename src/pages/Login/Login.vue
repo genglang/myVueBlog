@@ -45,9 +45,10 @@
 		border: 1px solid #DDDDDD;
 		padding: 1rem;
 		.header-background {
-			width: 100px;
-			height: 100px;
+			width: 100%;
+			height: 500px;
 			background: url("/../../images/header.png") center center;
+			background-size: cover;
 		}
 	}
 
