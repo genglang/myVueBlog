@@ -42,12 +42,17 @@
 
 <style lang='scss' scoped>
 	.login-container {
+		width: 400px;
 		border: 1px solid #DDDDDD;
 		padding: 1rem;
+		position: fixed;
+		top:50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
 		.header-background {
-			width: 100%;
-			height: 500px;
-			background: url("/../../images/header.png") center center;
+			margin: 1rem 2rem;
+			height: 200px;
+			background: url("/../../images/header.jpg") center center;
 			background-size: cover;
 		}
 	}
