@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Login></Login>
+    <!--<Login></Login>-->
+    <div>跳转主页</div>
   </div>
 </template>
 
