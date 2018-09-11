@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import './css/index.scss'
 import App from './app.vue'
-import FormInput from './components/FormInput'
-import GpButton from './components/GpButton'
+import FormInput from './components/gp-input/GpInput'
+import GpButton from './components/gp-button/GpButton'
 import GpToast from './components/gp-toast/GpToast'
 
 Vue.component('form-input',FormInput)

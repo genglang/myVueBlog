@@ -18,7 +18,7 @@
 </template>
 
 <script>
-	import GpButton from '../../components/GpButton'
+	import GpButton from '../../components/gp-button/GpButton'
 
 	export default {
 		name: 'Login',

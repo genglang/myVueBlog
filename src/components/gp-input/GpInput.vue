@@ -19,7 +19,7 @@
 
 <script>
 	export default {
-		name: 'form-input',
+		name: 'GpInput',
 		props: {
 			type: {
 				default: 'text'
