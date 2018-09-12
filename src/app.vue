@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <!--<Login></Login>-->
-    <div>跳转主页</div>
-    <gp-toast></gp-toast>
+    <Login></Login>
+    <!--<div>跳转主页</div>-->
+    <!--<gp-toast></gp-toast>-->
   </div>
 </template>
 

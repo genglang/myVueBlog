@@ -53,7 +53,7 @@
 		.header-background {
 			margin: 1rem 2rem;
 			height: 200px;
-			background: url("/../../images/header.jpg") no-repeat center center;
+			background: url("../../images/header.jpg") no-repeat center center;
 			background-size: cover;
 		}
 	}

@@ -7,7 +7,7 @@ const PurifyCSSPlugin = require('purifycss-webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 const website = {
-	publicPath: 'http://localhost:8888'
+	publicPath: 'http://localhost:8888/'
 }
 
 module.exports = {
