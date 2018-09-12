@@ -45,13 +45,11 @@
 		width: 400px;
 		border: 1px solid #DDDDDD;
 		border-radius: .5rem;
-		padding: 1rem;
 		position: fixed;
 		top:50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
 		.header-background {
-			margin: 1rem 2rem;
 			height: 200px;
 			background: url("../../images/header.jpg") no-repeat center center;
 			background-size: cover;
@@ -64,7 +62,7 @@
 	}
 
 	.form-group {
-		margin-top: .5rem;
+		margin-top: 1rem;
 		width: 100%;
 		display: flex;
 	}
