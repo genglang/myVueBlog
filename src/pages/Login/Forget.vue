@@ -1,6 +1,6 @@
 <template>
 	<div class="login-container">
-		<form @submit.prevent="onLoginSubmit" class="login-view">
+		<form @submit.prevent="onForgetSubmit" class="login-view">
 			<div class="form-group">
 				<label class="form-text" for="userName">账号</label>
 				<form-input id="userName" placeholder='请输入账号' v-model="userName" input-size="flex"/>
@@ -41,9 +41,11 @@
 			}
 		},
 		methods: {
-			onLoginSubmit () {
+			onForgetSubmit () {
 				console.log(this.userName)
+				console.log(this.CAPTCHAMsg)
 				console.log(this.userPwd)
+				console.log(this.userRePwd)
 			},
 		}
 	}
