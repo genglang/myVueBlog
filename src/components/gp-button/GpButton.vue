@@ -38,6 +38,7 @@
 <style lang="scss" scoped>
 	.gl-button {
 		padding: .5rem 1rem;
+		color: #fff;
 		border: 1px solid #DDDDDD;
 		border-radius: .5rem;
 		outline: none;

@@ -3,19 +3,19 @@
 		<form @submit.prevent="onForgetSubmit" class="login-view">
 			<div class="form-group">
 				<label class="form-text" for="userName">账号</label>
-				<form-input id="userName" placeholder='请输入账号' v-model="userName" input-size="flex"/>
+				<form-input id="userName" placeholder='请输入账号' v-model="userName" input-size="large"/>
 			</div>
 			<div class="form-group">
 				<label class="form-text" for="userName">短信验证码</label>
-				<form-input id="CAPTCHA" placeholder='请输入验证码' v-model="CAPTCHAMsg" input-size="flex"/>
+				<form-input id="CAPTCHA" placeholder='请输入验证码' v-model="CAPTCHAMsg" input-size="large"/>
 			</div>
 			<div class="form-group">
 				<label class="form-text" for="password">密码</label>
-				<form-input id="password" type='password' placeholder='请输入密码' v-model="userPwd" input-size="flex"/>
+				<form-input id="password" type='password' placeholder='请输入密码' v-model="userPwd" input-size="large"/>
 			</div>
 			<div class="form-group">
 				<label class="form-text" for="password">确认密码</label>
-				<form-input id="re-password" type='password' placeholder='请再次输入密码' v-model="userRePwd" input-size="flex"/>
+				<form-input id="re-password" type='password' placeholder='请再次输入密码' v-model="userRePwd" input-size="large"/>
 			</div>
 			<div class="form-group">
 				<gp-button buttonType="primary" buttonSize="large">登录</gp-button>

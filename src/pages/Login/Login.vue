@@ -3,12 +3,10 @@
 		<div class="header-background"/>
 		<form @submit.prevent="onLoginSubmit" class="login-view">
 			<div class="form-group">
-				<label class="form-text" for="userName">账号</label>
-				<form-input id="userName" placeholder='请输入账号' v-model="userName" input-size="flex"/>
+				<form-input id="userName" placeholder='请输入账号' v-model="userName" input-size="large"/>
 			</div>
 			<div class="form-group">
-				<label class="form-text" for="password">密码</label>
-				<form-input id="password" type='password' placeholder='请输入密码' v-model="userPwd" input-size="flex"/>
+				<form-input id="password" type='password' placeholder='请输入密码' v-model="userPwd" input-size="large"/>
 			</div>
 			<div class="form-group">
 				<gp-button buttonType="primary" buttonSize="large">登录</gp-button>
@@ -46,9 +44,9 @@
 		border: 1px solid #DDDDDD;
 		border-radius: .5rem;
 		position: fixed;
-		top:50%;
+		top: 50%;
 		left: 50%;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%, -50%);
 		.header-background {
 			height: 200px;
 			background: url("../../images/header.jpg") no-repeat center center;
@@ -56,25 +54,27 @@
 		}
 	}
 
-	.form-group {
-		margin-top: 1rem;
-		width: 100%;
-		display: flex;
-		align-items: center;
-	}
+	.login-view {
+		.form-group {
+			margin-top: 1rem;
+			width: 100%;
+			display: flex;
+			align-items: center;
+		}
 
-	.form-text {
-		width: 4rem;
-		margin: 0 1rem;
-		line-height: 1rem;
-		height: 1rem;
-		overflow: hidden;
-		text-align: justify;
-	}
-	.form-text:after{
-		content: '';
-		width: 100%;
-		display: inline-block;
-		overflow: hidden;
+		.form-text {
+			width: 4rem;
+			margin: 0 1rem;
+			line-height: 1rem;
+			height: 1rem;
+			overflow: hidden;
+			text-align: justify;
+		}
+		.form-text:after {
+			content: '';
+			width: 100%;
+			display: inline-block;
+			overflow: hidden;
+		}
 	}
 </style>
