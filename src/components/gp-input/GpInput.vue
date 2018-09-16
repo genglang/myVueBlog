@@ -1,8 +1,7 @@
 <template>
 	<div :class="['input-view',inputSize]">
-		<input :class="['formInput',inputSize]"
+		<input :class="['form-input',inputSize]"
 		       :type="type"
-		       :placeholder="placeholder"
 		       :maxlength="maxlength"
 		       :minlength="minlength"
 		       :disabled="disabled"
@@ -17,6 +16,7 @@
 		       @clear="$emit('clear', $event.target.value)"
 		/>
 		<div class="input-focus"></div>
+		<div class="input-placeholder">{{placeholder}}</div>
 	</div>
 </template>
 
@@ -50,7 +50,7 @@
 		margin: 1rem;
 		border-bottom: 1px solid #DDDDDD;
 		position: relative;
-		.input-focus{
+		.input-focus {
 			width: 0;
 			position: absolute;
 			top: 100%;
@@ -58,11 +58,24 @@
 			border-bottom: 2px solid;
 			border-color: #6495ED;
 		}
-		.formInput {
+		.input-placeholder {
+			position: absolute;
+			top: 0;
+			color: #CCCCCC;
+			z-index: -1;
+		}
+		.form-input {
 			font-size: 1rem;
 			border: none;
 			outline: none; /*去掉焦点边框手写样式*/
-			&:focus + .input-focus {
+			background-color: rgba(255, 255, 255, 0);
+			&:focus ~ .input-placeholder {
+				font-size: .5rem;
+				color: #6495ED;
+				top: -1rem;
+				transition: top .25s, font-size .5s;
+			}
+			&:focus ~ .input-focus {
 				width: 100%;
 				left: 0;
 				transition: all .5s;
