@@ -79,6 +79,12 @@
 		}
 	}
 	.forget-link{
+		padding: .5rem;
+		text-decoration: none;
 		color: #6495ED;
+		&:hover{
+			background-color: #f6fafe;
+			color: #1a73e8;
+		}
 	}
 </style>
