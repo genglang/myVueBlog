@@ -1,6 +1,6 @@
 <template>
 	<div class="login-container">
-		<div class="header-background"/>
+		<div class="header-background"></div>
 		<form @submit.prevent="onLoginSubmit" class="login-view">
 			<div class="form-group">
 				<form-input id="userName" placeholder='请输入账号' v-model="userName" input-size="large"/>
@@ -48,8 +48,11 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 		.header-background {
 			height: 200px;
+			border-top-left-radius: .5rem;
+			border-top-right-radius: .5rem;
 			background: url("../../images/header.jpg") no-repeat center center;
 			background-size: cover;
 		}
@@ -78,13 +81,14 @@
 			overflow: hidden;
 		}
 	}
-	.forget-link{
+
+	.forget-link {
 		padding: .5rem;
 		text-decoration: none;
 		color: #6495ED;
-		&:hover{
-			background-color: #f6fafe;
-			color: #1a73e8;
+		&:hover {
+			background-color: #F6FAFE;
+			color: #1A73E8;
 		}
 	}
 </style>
