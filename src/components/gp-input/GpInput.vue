@@ -47,7 +47,8 @@
 
 <style lang='scss' scoped>
 	.input-view {
-		margin: 1rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 		border-bottom: 1px solid #DDDDDD;
 		position: relative;
 		.input-focus {
@@ -70,10 +71,10 @@
 			outline: none; /*去掉焦点边框手写样式*/
 			background-color: rgba(255, 255, 255, 0);
 			&:focus ~ .input-placeholder {
-				font-size: .5rem;
+				font-size: .75rem;
 				color: #6495ED;
 				top: -1rem;
-				transition: top .25s, font-size .5s;
+				transition: top .25s, font-size .25s;
 			}
 			&:focus ~ .input-focus {
 				width: 100%;

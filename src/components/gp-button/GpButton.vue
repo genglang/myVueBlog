@@ -45,15 +45,18 @@
 	}
 
 	.small {
-		min-width: 50px;
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 
 	.medium {
-		min-width: 200px;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 
 	.large {
-		width: 100%;
+		padding-left: 100px;
+		padding-right: 100px;
 	}
 
 	.primary {

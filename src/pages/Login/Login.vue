@@ -9,7 +9,8 @@
 				<form-input id="password" type='password' placeholder='请输入密码' v-model="userPwd" input-size="large"/>
 			</div>
 			<div class="form-group">
-				<gp-button buttonType="primary" buttonSize="large">登录</gp-button>
+				<a class="forget-link" href="#">忘记了密码?</a>
+				<gp-button buttonType="primary" buttonSize="medium">登录</gp-button>
 			</div>
 		</form>
 	</div>
@@ -56,9 +57,9 @@
 
 	.login-view {
 		.form-group {
-			margin-top: 1rem;
-			width: 100%;
+			margin: 2rem;
 			display: flex;
+			justify-content: space-between;
 			align-items: center;
 		}
 
@@ -76,5 +77,8 @@
 			display: inline-block;
 			overflow: hidden;
 		}
+	}
+	.forget-link{
+		color: #6495ED;
 	}
 </style>
