@@ -79,7 +79,7 @@
 			&:focus ~ .input-focus {
 				width: 100%;
 				left: 0;
-				transition: all .5s;
+				transition: all .25s;
 			}
 		}
 	}
