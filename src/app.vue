@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Login></Login>
+    <router-view></router-view>
+    <!--<Login></Login>-->
     <!--<Forget></Forget>-->
     <!--<div>跳转主页</div>-->
     <!--<gp-toast></gp-toast>-->

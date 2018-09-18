@@ -9,7 +9,7 @@
 				<form-input id="password" type='password' placeholder='请输入密码' v-model="userPwd" input-size="large"/>
 			</div>
 			<div class="form-group">
-				<a class="forget-link" href="#">忘记了密码?</a>
+				<router-link class="forget-link" to="/forget">忘记了密码?</router-link>
 				<gp-button buttonType="primary" buttonSize="medium">登录</gp-button>
 			</div>
 		</form>
