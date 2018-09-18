@@ -1,5 +1,5 @@
 <template>
-	<button :class="[buttonDefaultStyle,buttonSize,buttonType]">
+	<button :class="['gl-button',buttonSize,buttonType]">
 		<slot>按钮</slot>
 	</button>
 </template>
@@ -28,9 +28,7 @@
 			}
 		},
 		data () {
-			return {
-				buttonDefaultStyle: 'gl-button'
-			}
+			return {}
 		}
 	}
 </script>
@@ -38,10 +36,19 @@
 <style lang="scss" scoped>
 	.gl-button {
 		padding: .5rem 1rem;
-		color: #fff;
+		color: #FFFFFF;
 		border: 1px solid #DDDDDD;
 		border-radius: .5rem;
 		outline: none;
+		&:hover {
+			background-color: #6495ED;
+		}
+		&:active {
+			background-color: #323E6A;
+		}
+		&:focus{
+			background-color: #323E6A;
+		}
 	}
 
 	.small {
