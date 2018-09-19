@@ -1,6 +1,6 @@
 <template>
 	<div class="login-container">
-		<form @submit.prevent="onForgetSubmit" class="login-view">
+		<form @submit.prevent="onForgetSubmit" class="forget-view">
 			<div class="form-group">
 				<form-input id="userName" placeholder='请输入账号' v-model="userName" input-size="large"/>
 			</div>
@@ -33,7 +33,7 @@
 				userName: '',
 				CAPTCHAMsg: '',
 				userPwd: '',
-				userRePwd:''
+				userRePwd: ''
 			}
 		},
 		methods: {
@@ -53,12 +53,12 @@
 		border: 1px solid #DDDDDD;
 		border-radius: .5rem;
 		position: fixed;
-		top:50%;
+		top: 50%;
 		left: 50%;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%, -50%);
 	}
 
-	.login-view {
+	.forget-view {
 		margin: 1rem;
 		padding: 1rem;
 	}
@@ -67,6 +67,7 @@
 		margin-top: 1rem;
 		width: 100%;
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
 	}
 
@@ -78,7 +79,8 @@
 		overflow: hidden;
 		text-align: justify;
 	}
-	.form-text:after{
+
+	.form-text:after {
 		content: '';
 		width: 100%;
 		display: inline-block;

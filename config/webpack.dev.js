@@ -102,7 +102,7 @@ module.exports = {
 		host: 'localhost',
 		// 服务端压缩是否开启
 		compress: true,
-		historyApiFallback: true,
+		historyApiFallback: true, // vue router history模式制定路由访问需要设置为true
 		port: 8888
 	}
 }
