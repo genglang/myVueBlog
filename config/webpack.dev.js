@@ -102,6 +102,7 @@ module.exports = {
 		host: 'localhost',
 		// 服务端压缩是否开启
 		compress: true,
+		historyApiFallback: true,
 		port: 8888
 	}
 }

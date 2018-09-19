@@ -8,10 +8,12 @@ export default [
 	},
 	{
 		path: '/login',
+		name: 'Login',
 		component: Login
 	},
 	{
 		path: '/forget',
+		name: 'Forget',
 		component: Froget
 	}
 ]
