@@ -14,7 +14,7 @@
 				<form-input id="re-password" type='password' placeholder='请再次输入密码' v-model="userRePwd" input-size="large"/>
 			</div>
 			<div class="form-group">
-				<gp-button buttonType="primary" buttonSize="large">登录</gp-button>
+				<gp-button buttonType="primary" buttonSize="flex">登录</gp-button>
 			</div>
 		</form>
 	</div>

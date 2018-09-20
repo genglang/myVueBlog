@@ -46,7 +46,7 @@
 		&:active {
 			background-color: #323E6A;
 		}
-		&:focus{
+		&:focus {
 			background-color: #323E6A;
 		}
 	}
@@ -64,6 +64,10 @@
 	.large {
 		padding-left: 100px;
 		padding-right: 100px;
+	}
+
+	.flex {
+		flex: 1
 	}
 
 	.primary {
