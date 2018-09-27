@@ -2,10 +2,6 @@ const path = require('path')
 const merge = require('webpack-merge')
 const common = require('./webpack.common.js')
 
-const website = {
-	publicPath: 'http://localhost:8888/'
-}
-
 module.exports = merge(common, {
 	mode: 'development',
 	// 入口文件的配置项

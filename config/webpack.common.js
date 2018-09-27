@@ -73,18 +73,12 @@ module.exports = {
 	},
 	// 插件
 	plugins: [
-		new uglify(),
 		new htmlPlugin({
 			minify: { // 压缩
 				removeAttributeQuotes: true // 去掉属性的双引号
 			},
 			hash: true, // js hash名
 			template: './src/index.html' // 要打包的文件名
-		}),
-		new PurifyCSSPlugin({
-			// 这里配置了一个paths，主要是需找html模板，purifycss根据这个配置会遍历你的文件，查找哪些css被使用了。
-			// 注意： 使用这个插件必须配合extract-text-webpack-plugin这个插件
-			paths: glob.sync(path.join(__dirname, 'src/*.html'))
 		}),
 		new VueLoaderPlugin()
 	],
