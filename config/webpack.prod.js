@@ -1,5 +1,8 @@
+const glob = require('glob')
 const path = require('path')
 const merge = require('webpack-merge')
+const uglify = require('uglifyjs-webpack-plugin') // js压缩
+const PurifyCSSPlugin = require('purifycss-webpack')
 const common = require('./webpack.common.js')
 
 module.exports = merge(common, {
@@ -8,7 +11,7 @@ module.exports = merge(common, {
 	entry: {
 		main: './src/main.js',
 	},
-	plugins:[
+	plugins: [
 		new uglify(),
 		new PurifyCSSPlugin({
 			// 这里配置了一个paths，主要是需找html模板，purifycss根据这个配置会遍历你的文件，查找哪些css被使用了。
