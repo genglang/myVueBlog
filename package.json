@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config=config/webpack.prod.js",
-    "dev": "webpack-dev-server --config=config/webpack.dev.js --open"
+    "build": "webpack --config=config/webpack.prod.js --progress --color",
+    "dev": "webpack-dev-server --config=config/webpack.dev.js --progress --color"
   },
   "keywords": [],
   "author": "",
