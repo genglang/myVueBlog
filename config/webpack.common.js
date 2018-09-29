@@ -1,6 +1,5 @@
 const path = require('path')
 const htmlPlugin = require('html-webpack-plugin') // html打包插件
-const extractTextPlugin = require('extract-text-webpack-plugin') // cas 分离
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 const website = {
