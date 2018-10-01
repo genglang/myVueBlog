@@ -11,9 +11,9 @@ module.exports = merge(common, {
 	devServer: {
 		contentBase: path.resolve(__dirname, '../dist'), // 设置基本的目录结构
 		host: 'localhost',  // 服务器的IP地址  可以用IP也可以用localhost
+		port: 8888,
 		compress: true,  // 服务端压缩是否开启
 		open: true,
 		historyApiFallback: true, // vue router history模式制定路由访问需要设置为true
-		port: 8888
 	}
 })
