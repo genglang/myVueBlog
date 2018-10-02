@@ -51,7 +51,7 @@
 		margin-bottom: 1rem;
 		border-bottom: 1px solid #DDDDDD;
 		position: relative;
-		.input-focus {
+		.input-focus { // input框下边
 			width: 0;
 			position: absolute;
 			top: 100%;
@@ -59,24 +59,24 @@
 			border-bottom: 2px solid;
 			border-color: #6495ED;
 		}
-		.input-placeholder {
+		.input-placeholder { // input 框文字
 			position: absolute;
 			top: 0;
 			color: #CCCCCC;
 			z-index: -1;
 		}
-		.form-input {
+		.form-input { // input框
 			font-size: 1rem;
 			border: none;
 			outline: none; /*去掉焦点边框手写样式*/
 			background-color: rgba(255, 255, 255, 0);
-			&:focus ~ .input-placeholder {
+			&:focus ~ .input-placeholder { // input框获得焦点后input框文字样式和动画
 				font-size: .75rem;
 				color: #6495ED;
 				top: -1rem;
 				transition: top .25s, font-size .25s;
 			}
-			&:focus ~ .input-focus {
+			&:focus ~ .input-focus { // input框获得焦点后input框下边样式和动画
 				width: 100%;
 				left: 0;
 				transition: all .25s;
