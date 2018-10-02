@@ -15,7 +15,7 @@
 		       @focus="$emit('focus', $event.target.value)"
 		       @clear="$emit('clear', $event.target.value)"
 		/>
-		<div class="input-focus"></div>
+		<div class="input-focus-border"></div>
 		<div class="input-placeholder">{{placeholder}}</div>
 	</div>
 </template>
@@ -51,7 +51,7 @@
 		margin-bottom: 1rem;
 		border-bottom: 1px solid #DDDDDD;
 		position: relative;
-		.input-focus { // input框下边
+		.input-focus-border { // input框下边
 			width: 0;
 			position: absolute;
 			top: 100%;
@@ -76,7 +76,7 @@
 				top: -1rem;
 				transition: top .25s, font-size .25s;
 			}
-			&:focus ~ .input-focus { // input框获得焦点后input框下边样式和动画
+			&:focus ~ .input-focus-border { // input框获得焦点后input框下边样式和动画
 				width: 100%;
 				left: 0;
 				transition: all .25s;
