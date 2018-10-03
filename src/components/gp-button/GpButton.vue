@@ -50,7 +50,7 @@
 			background-color: #323E6A;
 		}
 	}
-
+	/*按钮大小*/
 	.small {
 		padding-left: 25px;
 		padding-right: 25px;
@@ -69,7 +69,7 @@
 	.flex {
 		flex: 1
 	}
-
+	/*按钮颜色*/
 	.primary {
 		background-color: #409EFF;
 	}
