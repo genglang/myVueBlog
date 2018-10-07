@@ -2,11 +2,16 @@ const path = require('path')
 const merge = require('webpack-merge')
 const common = require('./webpack.common.js')
 
+const website = {
+	publicPath:"http://localhost:8888/"
+}
+
 module.exports = merge(common, {
 	mode: 'development',
-	// 入口文件的配置项
-	entry: {
-		main: './src/main.js',
+	output: {
+		path: path.resolve(__dirname, '../dist'),
+		filename: '[name].[hash].js', // 根据入口文件名称 打包成相同名称
+		publicPath: website.publicPath
 	},
 	devServer: {
 		contentBase: path.resolve(__dirname, '../dist'), // 设置基本的目录结构

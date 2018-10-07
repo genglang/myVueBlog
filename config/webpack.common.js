@@ -1,16 +1,14 @@
 const path = require('path')
 const htmlPlugin = require('html-webpack-plugin') // html打包插件
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
-const website = {
-	publicPath: './'
-}
+
 
 module.exports = {
-	output: {
-		path: path.resolve(__dirname, '../dist'),
-		filename: '[name].[hash].js', // 根据入口文件名称 打包成相同名称
-		publicPath: website.publicPath
+	// 入口文件的配置项
+	entry: {
+		main: './src/main.js',
 	},
 	// 模块：例如解读CSS 图片如何转换压缩
 	module: {
@@ -67,6 +65,10 @@ module.exports = {
 		}
 	},
 	plugins: [ // 插件
+		new CleanWebpackPlugin(['dist'], {
+			root: path.resolve(__dirname, '../'),
+			verbose: true,
+		}),
 		new htmlPlugin({
 			minify: { // 压缩
 				removeAttributeQuotes: true // 去掉属性的双引号

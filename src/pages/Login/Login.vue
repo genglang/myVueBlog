@@ -34,6 +34,7 @@
 			onLoginSubmit () {
 				console.log(this.userName)
 				console.log(this.userPwd)
+				console.log(this)
 			},
 		}
 	}
