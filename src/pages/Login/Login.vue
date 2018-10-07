@@ -34,7 +34,7 @@
 			onLoginSubmit () {
 				console.log(this.userName)
 				console.log(this.userPwd)
-				console.log(this)
+				this.$router.push('home')
 			},
 		}
 	}
