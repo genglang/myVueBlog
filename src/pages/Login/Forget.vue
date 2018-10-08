@@ -2,16 +2,16 @@
 	<div class="login-container">
 		<form @submit.prevent="onForgetSubmit" class="forget-view">
 			<div class="form-group">
-				<form-input id="userName" placeholder='请输入账号' v-model="userName" input-size="large"/>
+				<gp-input id="userName" placeholder='请输入账号' v-model="userName" input-size="large"/>
 			</div>
 			<div class="form-group">
-				<form-input id="CAPTCHA" placeholder='请输入验证码' v-model="CAPTCHAMsg" input-size="large"/>
+				<gp-input id="CAPTCHA" placeholder='请输入验证码' v-model="CAPTCHAMsg" input-size="large"/>
 			</div>
 			<div class="form-group">
-				<form-input id="password" type='password' placeholder='请输入密码' v-model="userPwd" input-size="large"/>
+				<gp-input id="password" type='password' placeholder='请输入密码' v-model="userPwd" input-size="large"/>
 			</div>
 			<div class="form-group">
-				<form-input id="re-password" type='password' placeholder='请再次输入密码' v-model="userRePwd" input-size="large"/>
+				<gp-input id="re-password" type='password' placeholder='请再次输入密码' v-model="userRePwd" input-size="large"/>
 			</div>
 			<div class="form-group">
 				<gp-button buttonType="primary" buttonSize="flex">登录</gp-button>

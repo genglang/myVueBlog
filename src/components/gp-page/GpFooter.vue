@@ -1,14 +1,12 @@
 <template>
 	<div>
-		<gp-header></gp-header>
-		<main>正文</main>
-		<gp-footer></gp-footer>
+		页尾
 	</div>
 </template>
 
 <script>
 	export default {
-		name: 'Home'
+		name: 'GpFooter'
 	}
 </script>
 

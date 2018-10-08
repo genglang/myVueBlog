@@ -3,10 +3,10 @@
 		<div class="header-background"></div>
 		<form @submit.prevent="onLoginSubmit" class="login-view">
 			<div class="form-group">
-				<form-input id="userName" placeholder='请输入账号' v-model="userName" input-size="large"/>
+				<gp-input id="userName" placeholder='请输入账号' v-model="userName" input-size="large"/>
 			</div>
 			<div class="form-group">
-				<form-input id="password" type='password' placeholder='请输入密码' v-model="userPwd" input-size="large"/>
+				<gp-input id="password" type='password' placeholder='请输入密码' v-model="userPwd" input-size="large"/>
 			</div>
 			<div class="form-group">
 				<router-link class="forget-link" to="/forget">忘记了密码?</router-link>
